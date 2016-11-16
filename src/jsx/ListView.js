@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import '../styles/ExampleComponent.css';
+import '../styles/ListView.css';
 
-// ExampleComponent
-export default class ExampleComponent extends Component {
+// ListView
+export default class ListView extends Component {
   render() {
     return (
-      <div className="example-component">
+      <div className="list-view">
         <h4>Current Data:</h4>
         <Display displayData={this.props.displayData}/>
       </div>

@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import Header from './Header.js';
-import ActionButton from './ActionButton.js';
-import ExampleComponent from './ExampleComponent.js';
+import AddButton from './AddButton.js';
+import ListView from './ListView.js';
 import '../styles/App.css';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: []
+      list: []
     };
   }
 
@@ -20,7 +20,7 @@ class App extends Component {
       dataType: 'json',
       cache: false,
       success: function(data) {
-        this.setState({data: data.jsondata});
+        this.setState({list: data.jsondata});
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
@@ -28,10 +28,10 @@ class App extends Component {
     });
   }
 
-  updateData(data) {
-    let currentData = this.state.data;
-    currentData.push({id: currentData.length, data: data});
-    this.setState({data: currentData});
+  updateList(data) {
+    let currentList = this.state.list;
+    currentList.push({id: currentList.length, data: data});
+    this.setState({list: currentList});
   }
 
   render() {
@@ -39,8 +39,8 @@ class App extends Component {
       <div className="App">
         <Header />
         <div className="main">
-          <ActionButton updateData={this.updateData.bind(this)}/>
-          <ExampleComponent displayData={this.state.data}/>
+          <AddButton updateList={this.updateList.bind(this)}/>
+          <ListView displayData={this.state.list}/>
         </div>
       </div>
     );

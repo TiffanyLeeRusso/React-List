@@ -8,7 +8,7 @@ export default class Header extends Component {
     return (
       <div id="header" className="navbar navbar-inverse navbar-static-top">
         <img src={logo} className="logo" alt="logo" />
-        <h2>React Boilerplate</h2>
+        <h2>React List</h2>
       </div>
     );
   }
