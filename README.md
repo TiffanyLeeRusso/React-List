@@ -11,8 +11,12 @@ Thanks for stopping by!
 
 ## Helpful React Websites:
 
-https://facebook.github.io/react/docs/react-component.html
-http://ricostacruz.com/cheatsheets/react.html
-https://facebook.github.io/react/tutorial/tutorial.html
-http://andrewhfarmer.com/component-communication/
-https://medium.com/@ericclemmons/react-event-preventdefault-78c28c950e46#.p6kztz39j
+[https://facebook.github.io/react/docs/react-component.html](https://facebook.github.io/react/docs/react-component.html)
+
+[http://ricostacruz.com/cheatsheets/react.html](http://ricostacruz.com/cheatsheets/react.html)
+
+[https://facebook.github.io/react/tutorial/tutorial.html](https://facebook.github.io/react/tutorial/tutorial.html)
+
+[http://andrewhfarmer.com/component-communication/](http://andrewhfarmer.com/component-communication/)
+
+[https://medium.com/@ericclemmons/react-event-preventdefault-78c28c950e46#.p6kztz39j](https://medium.com/@ericclemmons/react-event-preventdefault-78c28c950e46#.p6kztz39j)
